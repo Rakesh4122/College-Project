@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .body {
+            margin: auto;
+            width: 90%;
+            background-color: rgb(190, 190, 190)
+        }
+
+        #mainheader img {
+            width: 25%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .search {
+            float: right;
+        }
+
+        .search input[type=text] {
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid rgb(223, 217, 217);
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('images/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 10px 40px 12px 40px;
+            margin: 5px;
+        }
+
+        #mainheader nav {
+            background-color: rgb(202, 198, 198);
+            border-radius: 5px;
+            list-style-type: none;
+
+        }
+
+        #mainheader nav ul li {
+            padding: 8px 40px;
+            display: inline-block;
+            font-size: 35px;
+        }
+
+        #mainheader nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #mainheader nav ul li:hover {
+            background-color: rgb(179, 179, 179);
+        }
+        @media screen and (max-width:600px){
+            #mainheader nav ul li{
+                display: block;
+            }
+        }
+
+        .container {
+            width: 400px;
+            height: 550px;
+            border: 1px solid white;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+
+        #main {
+            width: 300px;
+            padding: 10px 50px 25px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            float: left;
+            margin-top: 5px;
+            color: white;
+            font-size: 16px;
+
+        }
+
+        hr {
+            margin: 10px -50px;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            height: 40px;
+            padding: 5px;
+            margin-bottom: 25px;
+            margin-top: 5px;
+            border: 2px solid rgb(204, 204, 204);
+            color: rgb(143, 128, 128);
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        input[type=button] {
+            font-size: 20px;
+            background: linear-gradient(rgb(255, 251, 0), rgb(248, 190, 0));
+            border: 1px solid rgb(209, 207, 192);
+            color: rgb(143, 128, 128);
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 10px;
+            padding: 12px 0;
+        }
+
+        input[type=button]:hover {
+            background: linear-gradient(rgb(248, 190, 0), rgb(255, 251, 0));
+        }
+
+        .note {
+            color: red;
+        }
+
+        .photo {
+            width: 0%;
+            margin-top: -550px;
+            margin-left: 900px;
+
+        }
+
+        .valid {
+            color: green;
+        }
+
+
+        .footer {
+            width: 100%;
+            float: left;
+            background-color: rgb(202, 198, 198);
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 115px;
+        }
+
+        .footer p {
+            margin: 10px auto;
+            color: #fff;
+            padding: 2px;
+            height: 40px;
+
+        }
+
+        .ftr {
+            font-size: 30px;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+      
+    </style>
+</head>
+
+<body class="body">
+    <header id="mainheader">
+        <img src="images/logo.png" alt="image">
+        <div class="search">
+            <form>
+                <input type="text" name="search" placeholder="search anything---"
+                    onclick="window.location.href='Search.html'">
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="Course.html">Download</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="main">
+            <h2>Informatics Login</h2>
+            <hr>
+            <form action="#">
+                <label for="User Name:">User Name:</label>
+                <input type="text" id="username" name="username" placeholder="username"><br><br>
+                <label for="Password:">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password"><br><br>
+                <input type="button" value="Login" id="submit" onclick="validate()">
+            </form>
+            <span>
+                <strong>
+                    <b class="note"> Note: </b>
+                    For this demo use following username and password.
+                </strong>
+                <h4>
+                    <p class="valid">
+                        User Name: informatics <br>
+                        Password: informatics123
+                    </p>
+                </h4>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="photo">
+        <a href="images/login_photo.jpg">
+            <img src="images/login_photo.jpg" alt="image">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright ©
+            <a href="https://www.facebook.com/">Ram Singh</a>
+        </p>
+        <div class="ftr">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+        </div>
+    </footer>
+
+    <script>
+        var attempt = 3;
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "informatics" && password == "informatics123") {
+                alert("Login Successfully");
+                window.location.href = "Success.html";
+                return false;
+            }
+            else {
+                attempt--;
+                alert("Incorrect password !! You have left" + attempt + "attempt");
+
+                if (attempt == 0) {
+                    document.getElementById("username").disabled = true;
+                    document.getElementById("password").disabled = true;
+                    document.getElementById("submit").disabled = true;
+                    return false;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

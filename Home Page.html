@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .body {
+            margin: 0 auto;
+            width: 90%;
+            clear: both;
+            background-color: rgb(240, 233, 233);
+            box-sizing: border-box;
+        }
+
+        #mainheader img {
+            width: 25%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .search {
+            float: right;
+        }
+
+        .search input[type=text] {
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid rgb(223, 217, 217);
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('images/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 10px 40px 12px 40px;
+            margin: 5px;
+        }
+
+        #mainheader nav {
+            background-color: rgb(202, 198, 198);
+            border-radius: 5px;
+            list-style-type: none;
+        }
+
+        #mainheader nav ul li {
+            padding: 8px 40px;
+            display: inline-block;
+            font-size: 35px;
+        }
+
+        #mainheader nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #mainheader nav ul li:hover {
+            background-color: rgb(179, 179, 179);
+        }
+        @media screen and (max-width:800px){
+            #mainheader nav ul li{
+                display:block;
+            }
+        }
+
+        .container {
+            width: 1550px;
+            height: 600px;
+            border: 5px solid #fff;
+            overflow: hidden;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            animation: scroll 12s infinite linear;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(0);
+            }
+
+            35% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(-100%);
+            }
+
+            65% {
+                transform: translateX(-200%);
+            }
+
+            75% {
+                transform: translateX(-200%);
+            }
+
+            85% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(-300%);
+            }
+        }
+
+        img {
+            width: 1550px;
+            height: 1350px;
+        }
+
+        .maincontent {
+            line-height: 25px;
+            border-radius: 5px;
+            width: 80%;
+
+        }
+        .content {
+            background-color: rgb(217, 217, 243);
+            line-height: 30px;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            padding: 2% 5%;
+            margin: 2%;
+
+        }
+
+        .content p {
+            font-size: 18px;
+        }
+
+        .maincontent a {
+            color: rgb(233, 20, 20);
+        }
+
+        .info {
+            font-style: italic;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+        }
+
+        .main_sidebar {
+            float: right;
+        }
+
+        .top_sidebar {
+            width: 40%;
+            background-color: rgb(222, 220, 223);
+            border-radius: 5px;
+            padding: 2% 6%;
+            margin: 8%;
+            margin-top: -209%;
+            text-align: center;
+        }
+
+        .middle_sidebar {
+            width: 40%;
+            background-color: rgb(222, 220, 223);
+            border-radius: 5px;
+            margin-left: 8%;
+            padding: 2% 6%;
+            margin-top: 10%;
+            text-align: center;
+        }
+
+        .bottom_sidebar {
+            width: 40%;
+            background-color: rgb(222, 220, 223);
+            border-radius: 5px;
+            margin-left: 8%;
+            padding: 2% 6%;
+            margin-top: 10%;
+            text-align: center;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: rgb(202, 198, 198);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .footer p {
+            width: 100%;
+            height: 40px;
+            margin: 10px auto;
+            color: #fff;
+            padding: 2px;
+
+        }
+
+        .ftr {
+            font-size: 30px;
+        }
+
+        .footer a {
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header id="mainheader">
+        <img src="images/logo.png" alt="image">
+        <div class="search">
+            <form>
+                <input type="text" name="search" placeholder="search anything---" onclick="window.location.href='Search.html'">
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="Course.html">Download</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <img src="images/a.jpg" alt="image">
+            <img src="images/d.jpg" alt="image">
+            <img src="images/e.jpg" alt="image">
+            <img src="images/login_photo - Copy.jpg" alt="image">
+        </div>
+    </div>
+
+    <div class="maincontent">
+            <div class="content">
+                <h3><a href="#">ICP</a></h3>
+                <p class="info">This post is written by Raj Singh</p>
+                <p>Informatics College Pokhara, Nepal Informatics College Pokhara is an autonomous Private Institution
+                    dedicated to maintain excellent academic performance. Since its establishment in 2011, Informatics
+                    College Pokhara has been actively working as a regular franchisee of Informatics Education Limited,
+                    Singapore. Informatics College Pokhara has an established track record of Academic excellence,
+                    within
+                    the Networks of Informatics – Globally. We are supported by a team of dedicated Professors,
+                    Lecturers,
+                    Counselors, meticulous management with a caring H.R. support service. Informatics College Pokhara is
+                    today producing competitive Gra duates, creating an enviable position among employers and
+                    Universities
+                    both Nationally and Internationally. Informatics College Pokhara, today can proudly boast of having
+                    produced sustainable and marketable graduates in various IT and Business & Management programs.</p>
+            </div>
+            <div class="content">
+                <h3><a href="#">Pathway programme</a></h3>
+                <p class="info">This post is written by Raj Singh</p>
+                <p>We plan for quality higher education programmes with complete progression pathway for you – from
+                    Foundation program up to Postgraduate degree level by the universities in Australia and United
+                    Kingdom.
+                    Our distinguished Academic and Examination Board also sets the academic and examination standards of
+                    Informatics Academy’s programmes. We make learning exclusive for you. We know everyone has different
+                    learning needs and lifestyles. We have learning modes ranging from traditional classroom learning,
+                    to
+                    e-learning and a combination of both to accommodate to different learning patterns. Our holistic
+                    education programme places equal emphasis on both academic and non-academic, co-curricular
+                    activities.
+                    We strive to provide learning and support services, as well as a conducive environment for you to
+                    learn,
+                    live and develop into global thought leaders of tomorrow. We focus in giving you the best.</p>
+            </div>
+    </div>
+
+    <div class="main_sidebar">
+        <div class="top_sidebar">
+            <h3>Join us today!</h3>
+            <p>Embark on an exciting learning journery with Informatics.</p>
+        </div>
+        <div class="middle_sidebar">
+            <h3>Your Boardroom Qualification</h3>
+            <p>A Degree to stand out from the crowd.</p>
+        </div>
+        <div class="bottom_sidebar">
+            <h3>Be ahead of your peers</h3>
+            <p>Fast track your education with Informatics</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright ©
+            <a href="https://www.facebook.com/">Ram Singh</a>
+        </p>
+        <div class="ftr">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+        </div>
+    </footer>
+</body>
+
+</html>

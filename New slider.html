@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Show</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: darkgrey;
+        }
+
+       
+        .container {
+            width: 1550px;
+            height: 600px;
+            /* border: 10px solid #fff; */
+            overflow: hidden;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            animation: scroll 14s infinite linear;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(0);
+            }
+
+            35% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translateX(-100%);
+            }
+
+            65% {
+                transform: translateX(-200%);
+            }
+
+            75% {
+                transform: translateX(-200%);
+            }
+
+            85% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(-300%);
+            }
+        }
+
+        img {
+            width: 1550px;
+            height: 1350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <img src="images/a.jpg" alt="">
+            <img src="images/d.jpg" alt="">
+            <img src="images/e.jpg" alt="">
+            <img src="images/login_photo - Copy.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

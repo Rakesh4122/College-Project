@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .body {
+            margin: auto;
+            width: 90%;
+            background-color: rgb(190, 190, 190);
+        }
+
+        #mainheader img {
+            width: 25%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .search {
+            float: right;
+        }
+
+        .search input[type=text] {
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid rgb(223, 217, 217);
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('images/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 10px 40px 12px 40px;
+            margin: 5px;
+        }
+
+        #mainheader nav {
+            background-color: rgb(202, 198, 198);
+            border-radius: 5px;
+            list-style-type: none;
+
+        }
+
+        #mainheader nav ul li {
+            padding: 8px 40px;
+            display: inline-block;
+            font-size: 35px;
+        }
+
+        #mainheader nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #mainheader nav ul li:hover {
+            background-color: rgb(179, 179, 179);
+        }
+
+        @media screen and (max-width:600px){
+            #mainheader nav ul li{
+                display: block;
+            }
+        }
+
+        .center {
+            margin-left: 250px;
+            margin-top: 30px;
+        }
+
+        input,
+        button {
+            padding: 8px 18px;
+            background-color: aliceblue;
+            border-radius: 8px;
+        }
+
+        #cont {
+            color:white;
+        }
+
+        hr {
+            margin: 80px -50px;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        iframe {
+            float: right;
+        }
+
+        .footer {
+            width: 100%;
+            float: left;
+            background-color: rgb(202, 198, 198);
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 115px;
+
+        }
+
+        .footer p {
+            margin: 10px auto;
+            color: #fff;
+            padding: 2px;
+            height: 40px;
+
+        }
+
+        .ftr {
+            font-size: 30px;
+        }
+
+        .footer a {
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header id="mainheader">
+        <img src="images/logo.png" alt="image">
+        <div class="search">
+            <form>
+                <input type="text" name="search" placeholder="search anything---" onclick="window.location.href='Search.html'">
+            </form>
+        </div>
+        <nav>
+            <ul> 
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="Course.html">Download</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="cont">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.751770923571!2d83.99819501554317!3d28.214853382584366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39959434ad2a5bf9%3A0xf4e7f9c749f63113!2sInformatics%20College%20Pokhara!5e0!3m2!1sen!2sin!4v1655031647120!5m2!1sen!2sin"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Contact</h2>
+        <h4>
+            Informatics College Pokhara <br>
+            Lions Building, Lions Marga
+        </h4>
+        <p>Pokhra-12, Kaski , Nepal</p>
+        <pre>
+Mobile No. : 6387416134,8090601547 
+
+Phone No. : 995-628-6091
+        
+Email-id : info@icr.edu.in 
+        
+Facebook : http://facebook.com/informaticscollegepkr
+    </pre>
+
+        <strong>If you are student please enter your students number:</strong>
+        <div class="center">
+            <input type="number" id="numb">
+            <button type="button" onclick="myFunction()">Submit</button>
+            <p id="demo"></p>
+        </div>
+    </div>
+    <hr>
+
+    <footer class="footer">
+        <p>Copyright ©
+            <a href="https://www.facebook.com/">Ram Singh</a>
+        </p>
+        <div class="ftr">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+        </div>
+    </footer>
+    
+    <!--Start here JavaScript code -->
+
+    <script>
+        function myFunction() {
+            var text;
+            var x = document.getElementById("numb").value;
+
+            if (isNaN(x) || x < 1 || x > 100) {
+                text = "Input not valid";
+            }
+            else {
+                text = "Input ok";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+
+    <!-- End JavaScript code -->
+</body>
+
+</html>
